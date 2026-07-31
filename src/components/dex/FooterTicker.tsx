@@ -15,7 +15,7 @@ export function FooterTicker() {
         Connected 451ms
       </span>
       <Filter className="h-4 w-4 shrink-0 text-muted-foreground" />
-      <span className="shrink-0 font-mono text-muted-foreground">6, 00:00 UTC</span>
+      <span className="shrink-0 tabular-nums tracking-tight text-muted-foreground">6, 00:00 UTC</span>
       <div className="flex min-w-0 flex-1 items-center gap-10 overflow-hidden">
         {news.map((n) => (
           <span key={n} className="shrink-0 whitespace-nowrap">

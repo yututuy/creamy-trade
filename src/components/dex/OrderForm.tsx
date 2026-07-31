@@ -13,7 +13,7 @@ export function OrderForm() {
 
       <div className="flex items-center gap-2 px-4 py-2.5 text-[12.5px]">
         <span className="text-muted-foreground">Avbl</span>
-        <span className="font-mono">0.00 USDT</span>
+        <span className="tabular-nums tracking-tight">0.00 USDT</span>
         <PlusCircle className="h-4 w-4 text-muted-foreground" />
       </div>
 
@@ -32,7 +32,7 @@ export function OrderForm() {
         <div className="flex items-center rounded-md border border-border bg-panel px-3 py-2.5">
           <input
             defaultValue="61789.0"
-            className="min-w-0 flex-1 bg-transparent font-mono text-[15px] outline-none"
+            className="min-w-0 flex-1 bg-transparent tabular-nums tracking-tight text-[15px] outline-none"
           />
           <span className="px-2.5 text-[13px] text-muted-foreground">USDT</span>
           <span className="h-5 w-px bg-border" />
@@ -42,7 +42,7 @@ export function OrderForm() {
         <div className="mt-2 flex items-center rounded-md border border-border bg-panel px-3 py-2.5">
           <input
             placeholder="Size"
-            className="min-w-0 flex-1 bg-transparent font-mono text-[14px] outline-none placeholder:text-muted-foreground"
+            className="min-w-0 flex-1 bg-transparent tabular-nums tracking-tight text-[14px] outline-none placeholder:text-muted-foreground"
           />
           <button className="flex items-center gap-1 text-[13px] text-muted-foreground">
             USDT <ChevronDown className="h-3.5 w-3.5" />
@@ -91,19 +91,19 @@ export function OrderForm() {
           ].map(([l1, v1, l2, v2]) => (
             <div key={l1 + v1 + l2} className="flex justify-between">
               <span className="text-muted-foreground">
-                {l1} <span className="font-mono text-foreground">{v1}</span>
+                {l1} <span className="tabular-nums tracking-tight text-foreground">{v1}</span>
               </span>
               <span className="text-muted-foreground">
-                {l2} <span className="font-mono text-foreground">{v2}</span>
+                {l2} <span className="tabular-nums tracking-tight text-foreground">{v2}</span>
               </span>
             </div>
           ))}
           <div className="flex justify-between">
             <span className="text-muted-foreground">
-              Max <span className="font-mono text-foreground">0.00 USDT</span>
+              Max <span className="tabular-nums tracking-tight text-foreground">0.00 USDT</span>
             </span>
             <span className="text-muted-foreground">
-              Max <span className="font-mono text-foreground">0.00 USDT</span>
+              Max <span className="tabular-nums tracking-tight text-foreground">0.00 USDT</span>
             </span>
           </div>
         </div>

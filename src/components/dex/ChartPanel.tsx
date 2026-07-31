@@ -130,7 +130,7 @@ export function ChartPanel() {
 
         <div className="flex min-w-0 flex-1 flex-col">
           <div className="relative min-h-0 flex-1">
-          <div className="pointer-events-none absolute left-3 top-2 z-10 space-y-1 font-mono text-[12.5px]">
+          <div className="pointer-events-none absolute left-3 top-2 z-10 space-y-1 tabular-nums tracking-tight text-[12.5px]">
             <div>
               <span className="text-muted-foreground">O</span>
               <span className="text-up">61697.8</span>{" "}
@@ -190,7 +190,7 @@ export function ChartPanel() {
             <path d={linePath(MA99)} fill="none" stroke="oklch(0.6 0.12 240)" strokeWidth="1.6" />
           </svg>
 
-          <div className="pointer-events-none absolute right-0 top-0 h-full w-[74px] font-mono text-[11.5px] text-muted-foreground">
+          <div className="pointer-events-none absolute right-0 top-0 h-full w-[74px] tabular-nums tracking-tight text-[11.5px] text-muted-foreground">
             {[82810.3, 80000, 76000, 72000, 68000, 64000, 59101].map((p, i) => (
               <div
                 key={p}
@@ -220,7 +220,7 @@ export function ChartPanel() {
           </div>
 
           <div className="relative h-[24%] min-h-[90px] shrink-0 border-t border-border">
-            <div className="absolute left-3 top-2 z-10 font-mono text-[12.5px] text-muted-foreground">
+            <div className="absolute left-3 top-2 z-10 tabular-nums tracking-tight text-[12.5px] text-muted-foreground">
               Volume SMA 9 <span className="text-down">15.721K</span>
             </div>
             <svg
@@ -244,7 +244,7 @@ export function ChartPanel() {
                 );
               })}
             </svg>
-            <div className="pointer-events-none absolute right-0 top-0 h-full w-[74px] font-mono text-[11.5px] text-muted-foreground">
+            <div className="pointer-events-none absolute right-0 top-0 h-full w-[74px] tabular-nums tracking-tight text-[11.5px] text-muted-foreground">
               {["40K", "30K", "20K", "10K"].map((t, i) => (
                 <div key={t} className="absolute left-1" style={{ top: `${16 + i * 24}%` }}>
                   {t}
@@ -256,7 +256,7 @@ export function ChartPanel() {
             </div>
           </div>
 
-          <div className="flex shrink-0 items-center justify-between border-t border-border px-4 py-2 font-mono text-[12px] text-muted-foreground">
+          <div className="flex shrink-0 items-center justify-between border-t border-border px-4 py-2 tabular-nums tracking-tight text-[12px] text-muted-foreground">
             <div className="flex flex-1 justify-around pr-24">
               {["Apr", "15", "May", "15 ", "Jun"].map((m) => (
                 <span key={m}>{m.trim()}</span>

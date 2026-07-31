@@ -25,7 +25,7 @@ export function MarketBar() {
             </span>
             <ChevronDown className="h-4 w-4 opacity-60" />
           </div>
-          <div className="font-mono text-[14px] font-medium text-down">61,203.6 -0.70%</div>
+          <div className="tabular-nums tracking-tight text-[14px] font-medium text-down">61,203.6 -0.70%</div>
         </div>
       </div>
 
@@ -39,7 +39,7 @@ export function MarketBar() {
             >
               {s.label}
             </div>
-            <div className="mt-1 font-mono text-[13px]">{s.value}</div>
+            <div className="mt-1 tabular-nums tracking-tight text-[13px]">{s.value}</div>
           </div>
         ))}
       </div>
