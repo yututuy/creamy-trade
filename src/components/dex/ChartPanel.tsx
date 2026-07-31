@@ -217,12 +217,17 @@ export function ChartPanel() {
           <button className="absolute left-3 top-[128px] grid h-6 w-8 place-items-center rounded border border-border bg-panel">
             <ChevronUp className="h-3.5 w-3.5 text-muted-foreground" />
           </button>
+          </div>
 
-          <div className="relative border-t border-border">
+          <div className="relative h-[150px] shrink-0 border-t border-border">
             <div className="absolute left-3 top-2 z-10 font-mono text-[12.5px] text-muted-foreground">
               Volume SMA 9 <span className="text-down">15.721K</span>
             </div>
-            <svg viewBox={`0 0 ${W} ${VH}`} className="w-full" preserveAspectRatio="none">
+            <svg
+              viewBox={`0 0 ${W} ${VH}`}
+              className="absolute inset-0 h-full w-full"
+              preserveAspectRatio="none"
+            >
               {CANDLES.map((c, i) => {
                 const x = i * step + step / 2;
                 const up = c.c >= c.o;
@@ -251,10 +256,10 @@ export function ChartPanel() {
             </div>
           </div>
 
-          <div className="flex items-center justify-between border-t border-border px-4 py-2 font-mono text-[12px] text-muted-foreground">
-            <div className="flex gap-16 pl-8">
-              {["Apr", "15", "May", "15", "Jun"].map((m) => (
-                <span key={m}>{m}</span>
+          <div className="flex shrink-0 items-center justify-between border-t border-border px-4 py-2 font-mono text-[12px] text-muted-foreground">
+            <div className="flex flex-1 justify-around pr-24">
+              {["Apr", "15", "May", "15 ", "Jun"].map((m) => (
+                <span key={m}>{m.trim()}</span>
               ))}
             </div>
             <div className="flex items-center gap-3">
