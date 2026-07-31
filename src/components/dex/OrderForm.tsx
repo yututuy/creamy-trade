@@ -2,16 +2,16 @@ import { ChevronDown, PlusCircle } from "lucide-react";
 
 export function OrderForm() {
   return (
-    <section className="flex w-[430px] shrink-0 flex-col bg-background">
-      <div className="grid grid-cols-3 border-b border-border text-[14px]">
-        <button className="py-3 text-muted-foreground">Market</button>
-        <button className="border-b-2 border-gold-strong py-3 font-semibold">Limit</button>
-        <button className="flex items-center justify-center gap-1 py-3 text-muted-foreground">
+    <section className="flex w-[330px] shrink-0 flex-col overflow-hidden bg-background">
+      <div className="grid grid-cols-3 border-b border-border text-[13.5px]">
+        <button className="py-[11px] text-muted-foreground">Market</button>
+        <button className="border-b-2 border-gold-strong py-[11px] font-semibold">Limit</button>
+        <button className="flex items-center justify-center gap-1 py-[11px] text-muted-foreground">
           Stop Limit <ChevronDown className="h-3.5 w-3.5" />
         </button>
       </div>
 
-      <div className="flex items-center gap-2 px-4 py-3 text-[13px]">
+      <div className="flex items-center gap-2 px-4 py-2.5 text-[12.5px]">
         <span className="text-muted-foreground">Avbl</span>
         <span className="font-mono">0.00 USDT</span>
         <PlusCircle className="h-4 w-4 text-muted-foreground" />
@@ -21,35 +21,35 @@ export function OrderForm() {
         {["Cross", "20x", "M"].map((b) => (
           <button
             key={b}
-            className="rounded-md border border-border bg-panel py-2 text-[14px] font-medium"
+            className="rounded-md border border-border bg-panel py-1.5 text-[13px] font-medium"
           >
             {b}
           </button>
         ))}
       </div>
 
-      <div className="mt-3 px-4">
-        <div className="flex items-center rounded-md border border-border bg-panel px-3 py-3">
+      <div className="mt-2.5 px-4">
+        <div className="flex items-center rounded-md border border-border bg-panel px-3 py-2.5">
           <input
             defaultValue="61789.0"
-            className="min-w-0 flex-1 bg-transparent font-mono text-[17px] outline-none"
+            className="min-w-0 flex-1 bg-transparent font-mono text-[15px] outline-none"
           />
-          <span className="px-3 text-[14px] text-muted-foreground">USDT</span>
+          <span className="px-2.5 text-[13px] text-muted-foreground">USDT</span>
           <span className="h-5 w-px bg-border" />
-          <span className="pl-3 text-[14px] font-medium">BBO</span>
+          <span className="pl-2.5 text-[13px] font-medium">BBO</span>
         </div>
 
-        <div className="mt-2 flex items-center rounded-md border border-border bg-panel px-3 py-3">
+        <div className="mt-2 flex items-center rounded-md border border-border bg-panel px-3 py-2.5">
           <input
             placeholder="Size"
-            className="min-w-0 flex-1 bg-transparent font-mono text-[15px] outline-none placeholder:text-muted-foreground"
+            className="min-w-0 flex-1 bg-transparent font-mono text-[14px] outline-none placeholder:text-muted-foreground"
           />
-          <button className="flex items-center gap-1 text-[14px] text-muted-foreground">
+          <button className="flex items-center gap-1 text-[13px] text-muted-foreground">
             USDT <ChevronDown className="h-3.5 w-3.5" />
           </button>
         </div>
 
-        <div className="relative mt-6 mb-4 h-1 rounded-full bg-panel-2">
+        <div className="relative mt-5 mb-3 h-1 rounded-full bg-panel-2">
           <div className="absolute -top-[5px] left-0 h-[14px] w-[14px] rounded-full border-2 border-gold-strong bg-background" />
           {[25, 50, 75, 100].map((p) => (
             <span
@@ -60,7 +60,7 @@ export function OrderForm() {
           ))}
         </div>
 
-        <div className="space-y-3 py-2 text-[14px]">
+        <div className="space-y-2.5 py-1 text-[13px]">
           <label className="flex items-center gap-2">
             <span className="h-4 w-4 rounded-sm border border-border bg-panel" />
             <span className="underline decoration-dotted underline-offset-4">TP/SL</span>
@@ -80,11 +80,11 @@ export function OrderForm() {
           </div>
         </div>
 
-        <button className="mt-4 w-full rounded-md bg-gold [background-image:var(--gradient-gold)] py-3.5 text-[16px] font-semibold text-primary-foreground shadow-[var(--shadow-panel)]">
+        <button className="mt-3 w-full rounded-md bg-gold [background-image:var(--gradient-gold)] py-3 text-[15px] font-semibold text-primary-foreground shadow-[var(--shadow-panel)]">
           Connect Wallet
         </button>
 
-        <div className="mt-5 space-y-3 text-[13px]">
+        <div className="mt-4 space-y-2.5 text-[12.5px]">
           {[
             ["Liq.Price", "--", "Liq.Price", "--"],
             ["Margin", "0.00", "Margin", "0.00"],
