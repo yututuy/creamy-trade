@@ -128,7 +128,8 @@ export function ChartPanel() {
           ))}
         </div>
 
-        <div className="relative min-w-0 flex-1">
+        <div className="flex min-w-0 flex-1 flex-col">
+          <div className="relative min-h-0 flex-1">
           <div className="pointer-events-none absolute left-3 top-2 z-10 space-y-1 font-mono text-[12.5px]">
             <div>
               <span className="text-muted-foreground">O</span>
@@ -151,7 +152,11 @@ export function ChartPanel() {
             </div>
           </div>
 
-          <svg viewBox={`0 0 ${W} ${H}`} className="w-full" preserveAspectRatio="none">
+          <svg
+            viewBox={`0 0 ${W} ${H}`}
+            className="absolute inset-0 h-full w-full"
+            preserveAspectRatio="none"
+          >
             {priceTicks.map((p) => (
               <line
                 key={p}
