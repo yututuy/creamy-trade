@@ -57,7 +57,7 @@ function Row({
 
 export function OrderBook() {
   return (
-    <section className="flex w-[330px] shrink-0 flex-col overflow-hidden bg-background">
+    <section className="flex w-[312px] shrink-0 flex-col overflow-hidden bg-background">
       <div className="grid grid-cols-2 border-b border-border">
         <button className="border-b-2 border-gold-strong py-[11px] text-[13.5px] font-semibold">
           Order Book
