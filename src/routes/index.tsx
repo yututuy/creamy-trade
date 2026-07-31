@@ -31,29 +31,29 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <div className="h-screen overflow-hidden bg-panel-2 p-2">
+    <div className="h-screen overflow-hidden bg-panel-2 p-[5px]">
       <h1 className="sr-only">Aster DEX BTCUSDT perpetual trading interface</h1>
-      <div className="flex h-full min-h-0 flex-col gap-2">
-        <div className="shrink-0 overflow-hidden rounded-2xl shadow-[var(--shadow-panel)]">
+      <div className="flex h-full min-h-0 flex-col gap-[5px]">
+        <div className="shrink-0 overflow-hidden rounded-lg shadow-[var(--shadow-panel)]">
           <TopNav />
         </div>
-        <div className="flex min-h-0 flex-1 gap-2">
-          <div className="flex min-h-0 min-w-0 flex-1 flex-col gap-2">
-            <div className="shrink-0 overflow-hidden rounded-2xl shadow-[var(--shadow-panel)]">
+        <div className="flex min-h-0 flex-1 gap-[5px]">
+          <div className="flex min-h-0 min-w-0 flex-1 flex-col gap-[5px]">
+            <div className="shrink-0 overflow-hidden rounded-lg shadow-[var(--shadow-panel)]">
               <MarketBar />
             </div>
-            <div className="flex min-h-0 flex-1 overflow-hidden rounded-2xl shadow-[var(--shadow-panel)]">
+            <div className="flex min-h-0 flex-1 overflow-hidden rounded-lg shadow-[var(--shadow-panel)]">
               <ChartPanel />
             </div>
           </div>
-          <div className="min-h-0 overflow-hidden rounded-2xl shadow-[var(--shadow-panel)]">
+          <div className="min-h-0 overflow-hidden rounded-lg shadow-[var(--shadow-panel)]">
             <OrderBook />
           </div>
-          <div className="min-h-0 overflow-hidden rounded-2xl shadow-[var(--shadow-panel)]">
+          <div className="min-h-0 overflow-hidden rounded-lg shadow-[var(--shadow-panel)]">
             <OrderForm />
           </div>
         </div>
-        <div className="shrink-0 overflow-hidden rounded-2xl shadow-[var(--shadow-panel)]">
+        <div className="shrink-0 overflow-hidden rounded-lg shadow-[var(--shadow-panel)]">
           <FooterTicker />
         </div>
       </div>
