@@ -219,7 +219,7 @@ export function ChartPanel() {
           </button>
           </div>
 
-          <div className="relative h-[150px] shrink-0 border-t border-border">
+          <div className="relative h-[24%] min-h-[90px] shrink-0 border-t border-border">
             <div className="absolute left-3 top-2 z-10 font-mono text-[12.5px] text-muted-foreground">
               Volume SMA 9 <span className="text-down">15.721K</span>
             </div>

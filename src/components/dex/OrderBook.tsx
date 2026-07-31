@@ -40,7 +40,7 @@ function Row({
   side: "ask" | "bid";
 }) {
   return (
-    <div className="relative grid grid-cols-3 px-3 py-[5px] font-mono text-[13px]">
+    <div className="relative grid grid-cols-3 px-3 py-[3px] font-mono text-[12px]">
       <div
         className="absolute right-0 top-0 h-full"
         style={{
@@ -57,15 +57,15 @@ function Row({
 
 export function OrderBook() {
   return (
-    <section className="flex w-[440px] shrink-0 flex-col bg-background">
+    <section className="flex w-[330px] shrink-0 flex-col overflow-hidden bg-background">
       <div className="grid grid-cols-2 border-b border-border">
-        <button className="border-b-2 border-gold-strong py-3 text-[14px] font-semibold">
+        <button className="border-b-2 border-gold-strong py-[11px] text-[13.5px] font-semibold">
           Order Book
         </button>
-        <button className="py-3 text-[14px] text-muted-foreground">Trades</button>
+        <button className="py-[11px] text-[13.5px] text-muted-foreground">Trades</button>
       </div>
 
-      <div className="flex items-center gap-2 px-3 py-2">
+      <div className="flex items-center gap-2 px-3 py-1.5">
         <Rows3 className="h-[18px] w-[18px] text-gold-strong" />
         <AlignLeft className="h-[18px] w-[18px] text-muted-foreground" />
         <AlignRight className="h-[18px] w-[18px] text-muted-foreground" />
@@ -79,7 +79,7 @@ export function OrderBook() {
         </div>
       </div>
 
-      <div className="grid grid-cols-3 px-3 pb-1 text-[12px] text-muted-foreground">
+      <div className="grid grid-cols-3 px-3 pb-1 text-[11px] text-muted-foreground">
         <span>Price (USDT)</span>
         <span className="text-right">Size (USDT)</span>
         <span className="text-right">Total (USDT)</span>
@@ -91,10 +91,10 @@ export function OrderBook() {
         ))}
       </div>
 
-      <div className="flex items-center gap-2 px-3 py-2.5">
-        <span className="font-mono text-[20px] font-semibold text-down">61,203.6</span>
+      <div className="flex items-center gap-2 px-3 py-2">
+        <span className="font-mono text-[18px] font-semibold text-down">61,203.6</span>
         <ArrowDown className="h-4 w-4 text-down" />
-        <span className="font-mono text-[15px] text-muted-foreground">61,207.5</span>
+        <span className="font-mono text-[14px] text-muted-foreground">61,207.5</span>
       </div>
 
       <div>
