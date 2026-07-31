@@ -9,13 +9,13 @@ const news = [
 
 export function FooterTicker() {
   return (
-    <footer className="flex h-[42px] items-center gap-6 bg-background px-4 text-[13px]">
+    <footer className="flex h-[42px] items-center gap-6 bg-background px-4 text-[14.5px]">
       <span className="flex shrink-0 items-center gap-2 text-up">
         <SignalHigh className="h-4 w-4" />
         Connected 451ms
       </span>
       <Filter className="h-4 w-4 shrink-0 text-muted-foreground" />
-      <span className="shrink-0 font-mono text-muted-foreground">6, 00:00 UTC</span>
+      <span className="shrink-0 tabular-nums tracking-tight text-muted-foreground">6, 00:00 UTC</span>
       <div className="flex min-w-0 flex-1 items-center gap-10 overflow-hidden">
         {news.map((n) => (
           <span key={n} className="shrink-0 whitespace-nowrap">
