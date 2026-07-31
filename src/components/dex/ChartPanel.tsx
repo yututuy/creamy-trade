@@ -130,7 +130,7 @@ export function ChartPanel() {
 
         <div className="flex min-w-0 flex-1 flex-col">
           <div className="relative min-h-0 flex-1">
-          <div className="pointer-events-none absolute left-3 top-2 z-10 space-y-1 tabular-nums tracking-tight text-[12.5px]">
+          <div className="pointer-events-none absolute left-3 top-2 z-10 space-y-1.5 tabular-nums tracking-tight text-[14.5px]">
             <div>
               <span className="text-muted-foreground">O</span>
               <span className="text-up">61697.8</span>{" "}

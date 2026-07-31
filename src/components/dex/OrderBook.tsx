@@ -40,7 +40,7 @@ function Row({
   side: "ask" | "bid";
 }) {
   return (
-    <div className="relative grid grid-cols-3 px-3 py-[3px] tabular-nums tracking-tight text-[12px]">
+    <div className="relative grid grid-cols-3 px-3 py-[7px] tabular-nums tracking-tight text-[13.5px]">
       <div
         className="absolute right-0 top-0 h-full"
         style={{
@@ -79,7 +79,7 @@ export function OrderBook() {
         </div>
       </div>
 
-      <div className="grid grid-cols-3 px-3 pb-1 text-[11px] text-muted-foreground">
+      <div className="grid grid-cols-3 px-3 pb-1 text-[12.5px] text-muted-foreground">
         <span>Price (USDT)</span>
         <span className="text-right">Size (USDT)</span>
         <span className="text-right">Total (USDT)</span>
@@ -92,9 +92,9 @@ export function OrderBook() {
       </div>
 
       <div className="flex items-center gap-2 px-3 py-2">
-        <span className="tabular-nums tracking-tight text-[18px] font-semibold text-down">61,203.6</span>
+        <span className="tabular-nums tracking-tight text-[21px] font-semibold text-down">61,203.6</span>
         <ArrowDown className="h-4 w-4 text-down" />
-        <span className="tabular-nums tracking-tight text-[14px] text-muted-foreground">61,207.5</span>
+        <span className="tabular-nums tracking-tight text-[15px] text-muted-foreground">61,207.5</span>
       </div>
 
       <div>

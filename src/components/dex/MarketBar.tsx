@@ -12,34 +12,34 @@ const stats = [
 
 export function MarketBar() {
   return (
-    <div className="flex h-[62px] items-center gap-7 overflow-hidden bg-background px-4">
+    <div className="flex h-[62px] items-center gap-9 overflow-hidden bg-background px-4">
       <div className="flex shrink-0 items-center gap-3">
         <div className="grid h-8 w-8 place-items-center rounded-full bg-gold [background-image:var(--gradient-gold)] text-[15px] font-bold text-primary-foreground">
           ₿
         </div>
         <div className="min-w-0">
           <div className="flex items-center gap-2">
-            <span className="text-[19px] font-semibold">BTCUSDT</span>
+            <span className="text-[22px] font-semibold">BTCUSDT</span>
             <span className="rounded bg-panel-2 px-1.5 py-0.5 text-[11px] font-medium text-muted-foreground">
               Perp
             </span>
             <ChevronDown className="h-4 w-4 opacity-60" />
           </div>
-          <div className="tabular-nums tracking-tight text-[14px] font-medium text-down">61,203.6 -0.70%</div>
+          <div className="tabular-nums tracking-tight text-[15px] font-medium text-down">61,203.6 -0.70%</div>
         </div>
       </div>
 
-      <div className="flex min-w-0 flex-1 items-center gap-6 overflow-hidden">
+      <div className="flex min-w-0 flex-1 items-center gap-8 overflow-hidden">
         {stats.map((s) => (
           <div key={s.label} className="min-w-0 shrink-0">
             <div
-              className={`text-[11.5px] text-muted-foreground ${
+              className={`text-[13px] text-muted-foreground ${
                 s.underline ? "underline decoration-dotted underline-offset-4" : ""
               }`}
             >
               {s.label}
             </div>
-            <div className="mt-1 tabular-nums tracking-tight text-[13px]">{s.value}</div>
+            <div className="mt-1.5 tabular-nums tracking-tight text-[15px]">{s.value}</div>
           </div>
         ))}
       </div>
