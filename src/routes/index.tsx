@@ -1,24 +1,60 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+import { TopNav } from "@/components/dex/TopNav";
+import { MarketBar } from "@/components/dex/MarketBar";
+import { ChartPanel } from "@/components/dex/ChartPanel";
+import { OrderBook } from "@/components/dex/OrderBook";
+import { OrderForm } from "@/components/dex/OrderForm";
+import { FooterTicker } from "@/components/dex/FooterTicker";
+
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Aster DEX — BTCUSDT Perpetual Trading Terminal" },
+      {
+        name: "description",
+        content:
+          "Trade BTCUSDT perpetuals on Aster: live order book, candlestick chart, funding rate and limit orders in a warm light terminal.",
+      },
+      { property: "og:title", content: "Aster DEX — BTCUSDT Perpetual Trading Terminal" },
+      {
+        property: "og:description",
+        content:
+          "Live order book, candlestick chart and limit order ticket for BTCUSDT perpetuals on Aster.",
+      },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="min-h-screen bg-panel-2 p-2">
+      <h1 className="sr-only">Aster DEX BTCUSDT perpetual trading interface</h1>
+      <div className="flex min-h-[calc(100vh-1rem)] flex-col gap-2">
+        <div className="overflow-hidden rounded-lg shadow-[var(--shadow-panel)]">
+          <TopNav />
+        </div>
+        <div className="overflow-hidden rounded-lg shadow-[var(--shadow-panel)]">
+          <MarketBar />
+        </div>
+        <div className="flex min-h-0 flex-1 gap-2">
+          <div className="flex min-w-0 flex-1 overflow-hidden rounded-lg shadow-[var(--shadow-panel)]">
+            <ChartPanel />
+          </div>
+          <div className="overflow-hidden rounded-lg shadow-[var(--shadow-panel)]">
+            <OrderBook />
+          </div>
+          <div className="overflow-hidden rounded-lg shadow-[var(--shadow-panel)]">
+            <OrderForm />
+          </div>
+        </div>
+        <div className="overflow-hidden rounded-lg shadow-[var(--shadow-panel)]">
+          <FooterTicker />
+        </div>
+      </div>
     </div>
   );
 }
