@@ -12,7 +12,7 @@ const stats = [
 
 export function MarketBar() {
   return (
-    <div className="flex h-[62px] items-center gap-9 overflow-hidden bg-background px-4">
+    <div className="flex h-[62px] items-center gap-[36px] overflow-hidden bg-background px-4">
       <div className="flex shrink-0 items-center gap-3">
         <div className="grid h-8 w-8 place-items-center rounded-full bg-gold [background-image:var(--gradient-gold)] text-[15px] font-bold text-primary-foreground">
           ₿
@@ -29,7 +29,7 @@ export function MarketBar() {
         </div>
       </div>
 
-      <div className="flex min-w-0 flex-1 items-center gap-8 overflow-hidden">
+      <div className="flex min-w-0 flex-1 items-center gap-[42px] overflow-hidden">
         {stats.map((s) => (
           <div key={s.label} className="min-w-0 shrink-0">
             <div
