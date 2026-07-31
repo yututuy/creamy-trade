@@ -59,10 +59,10 @@ export function OrderBook() {
   return (
     <section className="flex h-full w-[312px] shrink-0 flex-col overflow-hidden bg-background">
       <div className="grid grid-cols-2 border-b border-border">
-        <button className="border-b-2 border-gold-strong py-[11px] text-[13.5px] font-semibold">
+        <button className="border-b-2 border-gold-strong py-[11px] text-[16px] font-semibold">
           Order Book
         </button>
-        <button className="py-[11px] text-[13.5px] text-muted-foreground">Trades</button>
+        <button className="py-[11px] text-[16px] text-muted-foreground">Trades</button>
       </div>
 
       <div className="flex items-center gap-2 px-3 py-1.5">

@@ -191,13 +191,13 @@ export function ChartPanel() {
           </svg>
 
           <div className="pointer-events-none absolute right-0 top-0 h-full w-[74px] tabular-nums tracking-tight text-[11.5px] text-muted-foreground">
-            {[82810.3, 80000, 76000, 72000, 68000, 64000, 59101].map((p, i) => (
+            {[82810.3, 84000, 80000, 76000, 72000, 68000, 64000, 59101].map((p, i) => (
               <div
                 key={p}
                 className="absolute left-1"
                 style={{ top: `${(y(p) / H) * 100}%`, transform: "translateY(-50%)" }}
               >
-                {i === 0 || i === 6 ? (
+                {i === 0 || i === 7 ? (
                   <span className="rounded-sm bg-down px-1.5 py-0.5 text-destructive-foreground">
                     {p.toFixed(1)}
                   </span>

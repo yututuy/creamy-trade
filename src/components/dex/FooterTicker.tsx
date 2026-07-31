@@ -9,7 +9,7 @@ const news = [
 
 export function FooterTicker() {
   return (
-    <footer className="flex h-[42px] items-center gap-6 bg-background px-4 text-[13px]">
+    <footer className="flex h-[42px] items-center gap-6 bg-background px-4 text-[14.5px]">
       <span className="flex shrink-0 items-center gap-2 text-up">
         <SignalHigh className="h-4 w-4" />
         Connected 451ms

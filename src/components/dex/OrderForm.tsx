@@ -3,7 +3,7 @@ import { ChevronDown, PlusCircle } from "lucide-react";
 export function OrderForm() {
   return (
     <section className="flex h-full w-[312px] shrink-0 flex-col overflow-hidden bg-background">
-      <div className="grid grid-cols-3 border-b border-border text-[13.5px]">
+      <div className="grid grid-cols-3 border-b border-border text-[15.5px]">
         <button className="py-[11px] text-muted-foreground">Market</button>
         <button className="border-b-2 border-gold-strong py-[11px] font-semibold">Limit</button>
         <button className="flex items-center justify-center gap-1 py-[11px] text-muted-foreground">
@@ -11,7 +11,7 @@ export function OrderForm() {
         </button>
       </div>
 
-      <div className="flex items-center gap-2 px-4 py-2.5 text-[12.5px]">
+      <div className="flex items-center gap-2 px-4 py-3 text-[14px]">
         <span className="text-muted-foreground">Avbl</span>
         <span className="tabular-nums tracking-tight">0.00 USDT</span>
         <PlusCircle className="h-4 w-4 text-muted-foreground" />
@@ -21,7 +21,7 @@ export function OrderForm() {
         {["Cross", "20x", "M"].map((b) => (
           <button
             key={b}
-            className="rounded-md border border-border bg-panel py-1.5 text-[13px] font-medium"
+            className="rounded-md border border-border bg-panel py-2 text-[14.5px] font-medium"
           >
             {b}
           </button>
@@ -60,7 +60,7 @@ export function OrderForm() {
           ))}
         </div>
 
-        <div className="space-y-2.5 py-1 text-[13px]">
+        <div className="space-y-3 py-1 text-[14px]">
           <label className="flex items-center gap-2">
             <span className="h-4 w-4 rounded-sm border border-border bg-panel" />
             <span className="underline decoration-dotted underline-offset-4">TP/SL</span>
@@ -84,7 +84,7 @@ export function OrderForm() {
           Connect Wallet
         </button>
 
-        <div className="mt-4 space-y-2.5 text-[12.5px]">
+        <div className="mt-4 space-y-3 text-[14px]">
           {[
             ["Liq.Price", "--", "Liq.Price", "--"],
             ["Margin", "0.00", "Margin", "0.00"],
