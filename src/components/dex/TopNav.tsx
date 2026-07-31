@@ -13,7 +13,7 @@ export function TopNav() {
   return (
     <header className="flex h-[52px] items-center gap-6 bg-background px-4">
       <div className="flex shrink-0 items-center gap-2">
-        <div className="grid h-7 w-7 place-items-center rounded-full bg-[var(--gradient-gold)] text-[13px] font-bold text-primary-foreground">
+        <div className="grid h-7 w-7 place-items-center rounded-full bg-gold [background-image:var(--gradient-gold)] text-[13px] font-bold text-primary-foreground">
           ✦
         </div>
         <span className="text-[17px] font-semibold tracking-[0.14em]">ASTER</span>

@@ -14,7 +14,7 @@ export function MarketBar() {
   return (
     <div className="flex h-[74px] items-center gap-7 overflow-hidden bg-background px-4">
       <div className="flex shrink-0 items-center gap-3">
-        <div className="grid h-8 w-8 place-items-center rounded-full bg-[var(--gradient-gold)] text-[15px] font-bold text-primary-foreground">
+        <div className="grid h-8 w-8 place-items-center rounded-full bg-gold [background-image:var(--gradient-gold)] text-[15px] font-bold text-primary-foreground">
           ₿
         </div>
         <div className="min-w-0">

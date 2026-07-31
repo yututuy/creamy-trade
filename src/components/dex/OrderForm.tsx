@@ -80,7 +80,7 @@ export function OrderForm() {
           </div>
         </div>
 
-        <button className="mt-4 w-full rounded-md bg-[var(--gradient-gold)] py-3.5 text-[16px] font-semibold text-primary-foreground shadow-[var(--shadow-panel)]">
+        <button className="mt-4 w-full rounded-md bg-gold [background-image:var(--gradient-gold)] py-3.5 text-[16px] font-semibold text-primary-foreground shadow-[var(--shadow-panel)]">
           Connect Wallet
         </button>
 
