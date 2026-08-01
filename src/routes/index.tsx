@@ -31,7 +31,7 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <div className="h-screen overflow-y-auto bg-panel-2 p-[5px]">
+    <div className="no-scrollbar h-screen overflow-y-auto bg-panel-2 p-[5px]">
       <h1 className="sr-only">Aster DEX BTCUSDT perpetual trading interface</h1>
       <div className="flex h-full min-h-0 flex-col gap-[5px]">
         <div className="shrink-0 overflow-hidden rounded-2xl shadow-[var(--shadow-panel)]">
