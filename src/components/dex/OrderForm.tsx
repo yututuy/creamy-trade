@@ -21,7 +21,7 @@ export function OrderForm() {
         {["Cross", "20x", "M"].map((b) => (
           <button
             key={b}
-            className="rounded-md border border-border bg-panel py-2 text-[14.5px] font-medium"
+            className="rounded-xl border border-border bg-panel py-2 text-[14.5px] font-medium"
           >
             {b}
           </button>
@@ -29,7 +29,7 @@ export function OrderForm() {
       </div>
 
       <div className="mt-2.5 px-4">
-        <div className="flex items-center rounded-md border border-border bg-panel px-3 py-2.5">
+        <div className="flex items-center rounded-xl border border-border bg-panel px-3 py-2.5">
           <input
             defaultValue="61789.0"
             className="min-w-0 flex-1 bg-transparent tabular-nums tracking-tight text-[15px] outline-none"
@@ -39,7 +39,7 @@ export function OrderForm() {
           <span className="pl-2.5 text-[13px] font-medium">BBO</span>
         </div>
 
-        <div className="mt-2 flex items-center rounded-md border border-border bg-panel px-3 py-2.5">
+        <div className="mt-2 flex items-center rounded-xl border border-border bg-panel px-3 py-2.5">
           <input
             placeholder="Size"
             className="min-w-0 flex-1 bg-transparent tabular-nums tracking-tight text-[14px] outline-none placeholder:text-muted-foreground"
@@ -80,7 +80,7 @@ export function OrderForm() {
           </div>
         </div>
 
-        <button className="mt-3 w-full rounded-md bg-gold [background-image:var(--gradient-gold)] py-3 text-[15px] font-semibold text-primary-foreground shadow-[var(--shadow-panel)]">
+        <button className="mt-3 w-full rounded-2xl bg-gold [background-image:var(--gradient-gold)] py-3 text-[15px] font-semibold text-primary-foreground shadow-[var(--shadow-panel)]">
           Connect Wallet
         </button>
 
