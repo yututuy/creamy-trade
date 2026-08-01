@@ -49,7 +49,7 @@ function Index() {
           <div className="min-h-0 overflow-hidden rounded-2xl shadow-[var(--shadow-panel)]">
             <OrderBook />
           </div>
-          <div className="h-[calc(100%_-_190px)] min-h-0 self-start overflow-hidden rounded-2xl shadow-[var(--shadow-panel)]">
+          <div className="h-[calc(100%_-_95px)] min-h-0 self-start overflow-hidden rounded-2xl shadow-[var(--shadow-panel)]">
             <OrderForm />
           </div>
         </div>

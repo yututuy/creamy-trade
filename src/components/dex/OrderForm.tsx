@@ -84,7 +84,18 @@ export function OrderForm() {
           Connect Wallet
         </button>
 
-        <div className="mt-4 space-y-3 text-[14px]">
+        <div className="mt-5 rounded-2xl border border-border bg-panel px-3 py-2.5">
+          <div className="flex items-center justify-between text-[14px]">
+            <span className="text-muted-foreground">Order Value</span>
+            <span className="tabular-nums tracking-tight font-medium">0.00 USDT</span>
+          </div>
+          <div className="mt-2 flex items-center justify-between text-[13px]">
+            <span className="text-muted-foreground">Est. Fee</span>
+            <span className="tabular-nums tracking-tight text-muted-foreground">0.00 USDT</span>
+          </div>
+        </div>
+
+        <div className="mt-5 space-y-3 text-[14px]">
           {[
             ["Liq.Price", "--", "Liq.Price", "--"],
             ["Margin", "0.00", "Margin", "0.00"],
