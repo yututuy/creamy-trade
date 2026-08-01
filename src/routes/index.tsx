@@ -31,13 +31,13 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <div className="h-screen overflow-hidden bg-panel-2 p-[5px]">
+    <div className="h-screen overflow-y-auto bg-panel-2 p-[5px]">
       <h1 className="sr-only">Aster DEX BTCUSDT perpetual trading interface</h1>
       <div className="flex h-full min-h-0 flex-col gap-[5px]">
         <div className="shrink-0 overflow-hidden rounded-2xl shadow-[var(--shadow-panel)]">
           <TopNav />
         </div>
-        <div className="flex min-h-0 flex-1 gap-[5px]">
+        <div className="flex min-h-0 flex-1 gap-[5px] pb-[200px] [&>*]:h-[calc(100%+200px)]">
           <div className="flex min-h-0 min-w-0 flex-1 flex-col gap-[5px]">
             <div className="shrink-0 overflow-hidden rounded-2xl shadow-[var(--shadow-panel)]">
               <MarketBar />
@@ -49,7 +49,7 @@ function Index() {
           <div className="min-h-0 overflow-hidden rounded-2xl shadow-[var(--shadow-panel)]">
             <OrderBook />
           </div>
-          <div className="min-h-0 overflow-hidden rounded-2xl shadow-[var(--shadow-panel)]">
+          <div className="min-h-0 self-start overflow-hidden rounded-2xl shadow-[var(--shadow-panel)] [&&]:h-full">
             <OrderForm />
           </div>
         </div>
