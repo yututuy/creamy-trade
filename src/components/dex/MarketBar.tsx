@@ -1,4 +1,7 @@
+import { useState } from "react";
 import { ChevronDown, Star } from "lucide-react";
+
+import { MarketSelector } from "./MarketSelector";
 
 const stats = [
   { label: "Mark", value: "61,207.5", underline: false },
@@ -11,8 +14,9 @@ const stats = [
 ];
 
 export function MarketBar() {
+  const [open, setOpen] = useState(false);
   return (
-    <div className="flex h-[62px] items-center gap-[36px] overflow-hidden bg-background px-4">
+    <div className="relative flex h-[62px] items-center gap-[36px] bg-background px-4">
       <div className="flex shrink-0 items-center gap-3">
         <div className="grid h-8 w-8 place-items-center rounded-full bg-gold [background-image:var(--gradient-gold)] text-[15px] font-bold text-primary-foreground">
           ₿
@@ -23,7 +27,13 @@ export function MarketBar() {
             <span className="rounded bg-panel-2 px-1.5 py-0.5 text-[11px] font-medium text-muted-foreground">
               Perp
             </span>
-            <ChevronDown className="h-4 w-4 opacity-60" />
+            <button
+              aria-label="Open market list"
+              onClick={() => setOpen((v) => !v)}
+              className="grid h-5 w-5 place-items-center"
+            >
+              <ChevronDown className="h-4 w-4 opacity-60" />
+            </button>
           </div>
           <div className="tabular-nums tracking-tight text-[15px] font-medium text-down">61,203.6 -0.70%</div>
         </div>
@@ -47,6 +57,8 @@ export function MarketBar() {
       <button className="grid h-8 w-8 shrink-0 place-items-center rounded-md border border-border bg-panel">
         <Star className="h-4 w-4 text-muted-foreground" />
       </button>
+
+      {open && <MarketSelector onClose={() => setOpen(false)} />}
     </div>
   );
 }
