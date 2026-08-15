@@ -1,13 +1,17 @@
+import { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
+
 
 import { TopNav } from "@/components/dex/TopNav";
 import { MarketBar } from "@/components/dex/MarketBar";
+import { MarketSelector } from "@/components/dex/MarketSelector";
 import { ChartPanel } from "@/components/dex/ChartPanel";
 import { OrderBook } from "@/components/dex/OrderBook";
 import { OrderForm } from "@/components/dex/OrderForm";
 import { FooterTicker } from "@/components/dex/FooterTicker";
 import { PositionsPanel } from "@/components/dex/PositionsPanel";
 import { AccountPanel } from "@/components/dex/AccountPanel";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
