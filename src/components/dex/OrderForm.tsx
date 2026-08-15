@@ -2,7 +2,7 @@ import { ChevronDown, PlusCircle } from "lucide-react";
 
 export function OrderForm() {
   return (
-    <section className="flex h-full w-[312px] shrink-0 flex-col overflow-hidden bg-background">
+    <section className="flex h-full w-[280px] shrink-0 flex-col overflow-hidden bg-background">
       <div className="grid grid-cols-3 border-b border-border text-[15.5px]">
         <button className="py-[11px] text-muted-foreground">Market</button>
         <button className="border-b-2 border-gold-strong py-[11px] font-semibold">Limit</button>
